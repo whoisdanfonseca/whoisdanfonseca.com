@@ -13,16 +13,8 @@ div {
     min-width: 300px;
     max-width: 600px;
     margin:auto;
-	background-color: rgba(255, 255, 255, .7);
-}
-
-div>ul {
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-  column-gap: 40px;
-  text-align: left;
-  padding-bottom: 10px;
+    background-color: rgba(255, 255, 255, .7);
+    box-shadow: 6px 6px 4px rgba(76, 76, 76,.5);
 }
 
 div>a {
@@ -30,94 +22,121 @@ div>a {
 }
 
 a:link{
-	text-decoration: none;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 img {
-	border-radius:100%;
-	display: block;
-    margin: auto;
-    width: 75%;
+  display: block;
+  border-radius: 100%;
 }
 
 h1 {
-	color: rgba(255, 255, 255, .95);
-	padding-top: 20px;
+  color: rgba(255, 255, 255, .95);
+  padding-top: 20px;
 }
 
 h2{
-	padding:8px;
-	background-color: rgba(237, 99, 95,.9);
+  padding:8px;
+  background-color: rgba(237, 99, 95,.9);
 }
 
 h1,h2,h4,h6{
-	font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
-button{
-    background-color: rgba(255, 255, 255, .5);
-    color:#ed635f;
+h4{
+  color:rgba(255, 255, 255, .9);
 }
 
-button>a{
-	color: #ed635f;
+td{
+  width:50%;
 }
 
-#noborder{
-    background-color: rgba(255, 255, 255, 0);
-    padding: 20px 0px;
-    color:rgba(255, 255, 255, .85);
+#nav{
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: none;
+}
+
+.w3-bar{
+  color: #ed635f
 }
 
 #intro{
-	padding:45px 55px 20px 55px;
+  padding:50px 55px 25px 55px;
 }
 
 #intro>h2{
-	background-color: #f4de5b;
+  background-color: #f4de5b;
 }
 
 #yellowheader>h2 {
-	background-color: #f4de5b;
+  background-color: #f4de5b;
 }
 
 #redheader>h2{
-	color: rgba(255, 255, 255, .85);
+  color: rgba(255, 255, 255, .85);
 }
 
-#redheader>h2{
-	color: rgba(255, 255, 255, .85);
+#yellowheader, #redheader{
+  padding-bottom: 10px;
+}
+
+#yellowbutton, #redbutton, #greybutton{
+  border: 4px solid white;
+  color:rgba(255, 255, 255, 1);
+  box-shadow: 5px 5px 3px rgba(76, 76, 76,.4);
+  padding:15px;
+  margin: 15px 5px;
 }
 
 #yellowbutton{
-  border: 3px solid white;
   background-color: #f4de5b;
-  color:rgba(255, 255, 255, .7);
 }
 
 #redbutton{
-  border: 3px solid white;
   background-color: #ed635f;
-  color:white;
 }
 
 #greybutton{
-  border: 3px solid rgba(255, 255, 255, 1);
   background-color: #4c4c4c;
-  color:rgba(255, 255, 255, 1);
 }
 
+/* Slideshow container */
 .slideshow-container {
   max-width: 75%;
   margin: auto;
-  background-color: rgba(255, 255, 255, 0)
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: none;
 }
 
 .mySlides {
     display: none;
-    background-color: rgba(255, 255, 255, 0)
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+    margin:auto;
 }
 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  color: #bbb;
+  font-weight: bold;
+  font-size: 36px;
+  transition: 0.6s ease;
+  border-radius: 30px;
+  padding:0px 45px;
+  vertical-align:middle;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: rgba(0,0,0,0.5);
+}
+
+/* The dots/bullets/indicators */
 .dot {
   cursor:pointer;
   height: 13px;
@@ -127,18 +146,27 @@ button>a{
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  vertical-align:middle;
+}
+
+#imgnav{
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0);
+  padding-top: 18px;
+  vertical-align:middle;
+  margin:auto;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: rgba(0,0,0,0.5);
 }
 
+/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.25s;
+  -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 1.25s;
-  background-color: none;
+  animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
