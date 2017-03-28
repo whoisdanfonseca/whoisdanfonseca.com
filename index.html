@@ -9,49 +9,49 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
   <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
   <script type="text/javascript" src="whoisdanfonseca2.js"></script>
-
 </head>
 
 <body>
 
-<h1>whoisdanfonseca.com</h1>
-
-<div id="noborder">
-  <button class="w3-button w3-round-xxlarge w3-hover-shadow"><a href="https://www.instagram.com/whoisdanfonseca/">instagram</a></button>
-  <button class="w3-button w3-round-xxlarge w3-hover-shadow"><a href="https://www.linkedin.com/in/whoisdanfonseca/">linkedin</a></button>
-  <button class="w3-button w3-round-xxlarge w3-hover-shadow"><a href="mailto:whoisdanfonseca@gmail.com">email</a></button>
-  <button class="w3-button w3-round-xxlarge w3-hover-shadow"><a href="https://www.flickr.com/">flickr</a></button>
+<div id="nav">
+<div class="w3-bar">
+  <a href="https://www.instagram.com/whoisdanfonseca/" class="w3-bar-item w3-button" style="width:25%">insta</a>
+  <a href="https://www.linkedin.com/in/whoisdanfonseca/" class="w3-bar-item w3-button" style="width:25%">linkedin</a>
+  <a href="mailto:whoisdanfonseca@gmail.com" class="w3-bar-item w3-button" style="width:25%">email</a>
+  <a href="https://www.flickr.com/" class="w3-bar-item w3-button" style="width:25%">flickr</a>
+</div>
 </div>
 
-<div id="intro" class="w3-panel w3-hover-shadow"> 
+<div id="intro" class="w3-panel"> 
 
-<!--
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="https://cdn.shopify.com/s/files/1/1537/6443/files/dan-square-headshot.jpg?6075024753302595977" style="width:100%">   
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://cdn.shopify.com/s/files/1/1537/6443/files/Untitled-1.jpg?6127424090116917977" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://cdn.shopify.com/s/files/1/1537/6443/files/Untitled-2.jpg?6127424090116917977" style="width:100%">
+  </div>
+</div>
+
+<div id="imgnav" style="text-align:center">
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!--STATIC IMAGE
   <br>
     <img src="https://cdn.shopify.com/s/files/1/1537/6443/files/dan-square-headshot.jpg?6075024753302595977" class="w3-image"/>
   <br>
   <br>
 -->
-
-<div class="slideshow-container">
-
-  <div class="mySlides fade">
-    <img src="https://cdn.shopify.com/s/files/1/1537/6443/files/dan-square-headshot.jpg?6075024753302595977" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="https://cdn.shopify.com/s/files/1/1537/6443/files/dan-square-headshot.jpg?6075024753302595977" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="https://cdn.shopify.com/s/files/1/1537/6443/files/dan-square-headshot.jpg?6075024753302595977" style="width:100%">
-  </div>
-
-</div>
-  
-  <br>
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
 
   <p>
     <h2>dan fonseca</h2>
@@ -68,72 +68,104 @@
 
 </div>
 
-<div id= "redheader" class="w3-panel w3-hover-shadow"> 
-  <h2>acquisition</h2>
-  <ul>
-    <li>influencer marketing</li>
-    <li>facebook ads</li>
-    <li>google adwords</li>
-    <li>graphic design</li>
-    <li>inbound marketing</li>
-    <li>content creation</li>
-  </ul>
+<div id= "redheader" class="w3-panel">
+  <table class="w3-table">
+  <tr><h2>acquisition</h2></tr>
+  <tr>
+    <td>influencer marketing</td>
+    <td>facebook ads</td>
+  </tr> 
+  <tr>
+    <td>google adwords</td>
+    <td>graphic design</td>
+  </tr> 
+  <tr>
+    <td>inbound marketing</td>
+    <td>content creation</td>
+  </tr> 
+  </table>
 </div>
 
-<div id= "yellowheader" class="w3-panel w3-hover-shadow">  
-  <h2>retention</h2>
-  <ul>
-    <li>user on-boarding</li>
-    <li>user re-engagement</li>
-    <li>community management</li>
-    <li>volunteer management</li>
-    <li>push notifications</li>
-    <li>customer support</li>
-  </ul>
+<div id= "yellowheader" class="w3-panel">  
+  <table class="w3-table">
+  <tr><h2>retention</h2></tr>
+  <tr>
+    <td>user on-boarding</td>
+    <td>user re-engagement</td>
+  </tr> 
+  <tr>
+    <td>community management</td>
+    <td>volunteer management</td>
+  </tr> 
+  <tr>
+    <td>push notifications</td>
+    <td>customer support</td>
+  </tr> 
+  </table>
 </div>
 
-<div id= "redheader" class="w3-panel w3-hover-shadow"> 
-  <h2>opperations</h2>
-  <ul>
-    <li>biz dev</li>
-    <li>employee management</li>
-    <li>hiring</li>
-    <li>finding product/market fit</li>
-    <li>scaling growth</li>
-    <li>pivots</li>
-  </ul>
+<div id= "redheader" class="w3-panel"> 
+  <table class="w3-table">
+  <tr><h2>opperations</h2></tr>
+  <tr>
+    <td>biz dev</td>
+    <td>employee management</td>
+  </tr> 
+  <tr>
+    <td>hiring</td>
+    <td>finding product/market fit</td>
+  </tr> 
+  <tr>
+    <td>scaling growth</td>
+    <td>pivots</td>
+  </tr> 
+  </table>
 </div>
 
-<div id= "yellowheader" class="w3-panel w3-hover-shadow"> 
-  <h2>programs</h2>
-  <ul>
-    <li>google analytics</li>
-    <li>flurry analytics</li>
-    <li>squarespace</li>
-    <li>shopify</li>
-    <li>github</li>
-    <li>trello</li>
-    <li>mailchimp</li>
-    <li>photoshop</li>
-    <li>illustrator</li>
-    <li>final cut pro</li>
-  </ul>
+<div id= "yellowheader" class="w3-panel"> 
+   <table class="w3-table">
+  <tr><h2>programs</h2></tr>
+  <tr>
+    <td>google analytics</td>
+    <td>flurry analytics</td>
+  </tr> 
+  <tr>
+    <td>squarespace</td>
+    <td>shopify</td>
+  </tr> 
+  <tr>
+    <td>github</td>
+    <td>trello</td>
+  </tr> 
+   <tr>
+    <td>mailchimp</td>
+    <td>photoshop</td>
+  </tr> 
+  <tr>
+    <td>illustrator</td>
+    <td>final cut pro</td>
+  </tr> 
+  </table>
 </div>
 
-<div id= "redheader" class="w3-panel w3-hover-shadow"> 
-  <h2>i also know</h2>
-  <ul>
-    <li>html, css, js</li>
-    <li>spanish</li>
-    <li>professional photography</li>
-    <li>nonprofit p2p fundraising</li>
-  </ul>
+<div id= "redheader" class="w3-panel"> 
+   <table class="w3-table">
+  <tr><h2>i also know</h2></tr>
+  <tr>
+    <td>html, css, js</td>
+    <td>spanish</td>
+  </tr>  
+  <tr>
+    <td>professional photography</td>
+    <td>nonprofit p2p fundraising</td>
+  </tr> 
+  </table>
 </div>
 
-<div id="noborder" class="w3-panel">
-  <button id = "yellowbutton" class="w3-button w3-round-xxlarge w3-hover-shadow" onclick="swapStyleSheet('whoisdanfonseca2.css')">A</button>
-  <button id = "redbutton" class="w3-button w3-round-xxlarge w3-hover-shadow" onclick="swapStyleSheet('whoisdanfonseca2B.css')">B</button>
-  <button id = "greybutton" class="w3-button w3-round-xxlarge w3-hover-shadow" onclick="swapStyleSheet('whoisdanfonseca2C.css')">C</button>
+<div id="nav" class="w3-panel">
+  <button id = "yellowbutton" class="w3-bar-item w3-button" style="width:10%" onclick="swapStyleSheet('whoisdanfonseca2.css')"></button>
+  <button id = "redbutton" class="w3-bar-item w3-button" style="width:10%" onclick="swapStyleSheet('whoisdanfonseca2B.css')"></button>
+  <button id = "greybutton" class="w3-bar-item w3-button" style="width:10%" onclick="swapStyleSheet('whoisdanfonseca2C.css')"></button>
   <h4>~ coded by dan fonseca ~</h4>
 </div>
 
