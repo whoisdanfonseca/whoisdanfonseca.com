@@ -27,6 +27,8 @@ a:visited
 img {
   border-radius: 100%;
   box-shadow: 3px 3px 15px grey;
+  display: block;
+  margin: auto;
 }
 
 h3{
